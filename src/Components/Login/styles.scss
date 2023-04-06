@@ -1,0 +1,126 @@
+.login-containar {
+    
+    display: grid;
+    
+    grid-template-columns: 2fr 1fr;
+
+    img {
+        position: absolute;
+        z-index: 1;
+        width: 1230px;
+    }
+
+    .message {
+        position: absolute;
+        background-color: white;
+        color: #9400DA;
+        padding: 20px;
+        z-index: 3;
+        margin: 20px;
+        border-radius: 15px;
+        left: -130px;
+        transition: 1s;
+    }
+
+    .anim {
+        animation: myAnim 2s ease 0s 1 normal forwards;
+    }
+
+    .login {    
+        z-index: 2;
+        form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-size: 70vw;
+            color:white;
+    
+            h1 {
+                font-size: 1.5em;
+            }
+            p {
+                font-size: 1em;
+                font-weight: lighter;
+                color: rgba(255, 255, 255, 0.39);
+                margin-bottom: 10px;
+            }
+
+            label.lemail {
+                position: relative;
+                left: -46px;
+            }
+
+            label.lpassword {
+                position: relative;
+                left: -31px;
+            }
+            
+            input {
+                padding: 6px;
+                border-radius: 10px;
+                border: none;
+                border-bottom: solid 5px white;
+                background-color: rgba(255, 255, 255, 0.21);
+                color: white;
+                width: 200px;
+                margin-bottom: 10px;
+            }
+
+            button {
+                background-color:#9400DA;
+                border: none;
+                padding: 10px;
+                width: 200px;
+                border-radius: 10px;
+                color: white;
+                font-weight: bolder;
+                cursor: pointer;
+                margin-bottom: 5px;
+                transition: 0.5s;
+
+                &:hover {
+                    transition: 0.5s;
+                    color:#9400DA;
+                    background-color: white;
+                }
+            }
+
+            a {
+                color: white;
+                font-size: 0.7em;
+                color: rgba(255, 255, 255, 0.39);
+            }
+        }
+    }
+
+    .banner {
+        position: relative;
+        z-index: 0;
+        h1 {
+            color: white;
+            font-size: 7em;
+        }
+        img {
+            width: 120px;
+        }
+    }
+}
+
+body {
+    background-color: #9400DA;
+    overflow-y: hidden;
+    
+    
+}
+
+@keyframes myAnim {
+
+    100% {
+        transform: translateX(100px);
+    }
+}
